@@ -1,1 +1,1 @@
-# Nvidia
+# Nvidia AI - GPU SUMMER INTERNSHIP 2026
