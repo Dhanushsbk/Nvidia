@@ -6,7 +6,7 @@ While the notebook contains metadata labels referencing *Fashion-MNIST*, the cor
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 The repository executes a comparative workflow for modern deep learning vision tasks:
 *   **Data Preparation:** Loads a subset of the CIFAR-10 dataset, performs feature scaling/normalization, and dynamically resizes image dimensions.
@@ -17,7 +17,7 @@ The repository executes a comparative workflow for modern deep learning vision t
 
 ---
 
-## 🛠️ Architecture Details
+##  Architecture Details
 
 All models map down to a final $10$-unit Dense layer using a `softmax` activation function paired with `sparse_categorical_crossentropy` loss.
 
@@ -32,7 +32,7 @@ $$\text{Base Model Layer} \longrightarrow \text{GlobalAveragePooling2D} \longrig
 
 ---
 
-## 📊 Evaluation Benchmarks
+##  Evaluation Benchmarks
 
 Based on training benchmarks execution on a split subset ($10,000$ training images, $2,000$ testing images resized to $96 \times 96$), the following validation accuracies were achieved:
 
@@ -43,11 +43,11 @@ Based on training benchmarks execution on a split subset ($10,000$ training imag
 | **ResNet50** | **27.45%** | 3 Epochs / Pre-trained |
 | **EfficientNetB0** | **9.75%** | 3 Epochs / Pre-trained |
 
-> ⚠️ **Note:** `ResNet50` and `EfficientNetB0` require alternative learning rate scheduling, unfreezing/fine-tuning phases, or specific standard preprocessing scaling (e.g., input range handling adjustments) to achieve their optimal operational capacity on this downscaled data arrangement.
+>  **Note:** `ResNet50` and `EfficientNetB0` require alternative learning rate scheduling, unfreezing/fine-tuning phases, or specific standard preprocessing scaling (e.g., input range handling adjustments) to achieve their optimal operational capacity on this downscaled data arrangement.
 
 ---
 
-## 💻 Setup & Installation
+##  Setup & Installation
 
 ### Dependencies
 Ensure you have Python 3.10+ and a configured GPU framework environment (recommended). Install the core visualization and compute packages directly via `pip`:
